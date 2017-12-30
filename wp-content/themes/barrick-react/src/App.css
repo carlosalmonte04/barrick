@@ -1585,6 +1585,7 @@ a {
   border-radius: 0px;
   color: white;
   font-size: calc(4px + 0.7vw);
+  font-size: ~"calc(4px + 0.7vw)";
   font-weight: 100;
   padding: 10px 1%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2072,7 +2073,6 @@ a {
   .letter-item-title.left {
     width: 60%;
     min-width: 380px;
-    font-size: ~"calc(24px + 2vmin)";
   }
 
   .letter-item-intro.right {
