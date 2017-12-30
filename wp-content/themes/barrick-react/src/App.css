@@ -2425,6 +2425,7 @@ a {
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.22) 0px 2px 5px;
     padding: 10px;
+    padding-bottom: 25px;
     /*padding-left: 90px;*/
     transform: translate(0px);
     max-width: 433px !important;
@@ -2767,6 +2768,10 @@ a {
 
   .stat-item-chart-container {
     display: none;
+  }
+
+  .stat-item-subtitle {
+    width: 100%
   }
 
   .stat-item-subtitle > * {
