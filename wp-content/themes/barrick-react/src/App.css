@@ -35,9 +35,11 @@
 body {
   overflow-x: hidden;
 }
+
 body.mobile {
   opacity: 1
 }
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
