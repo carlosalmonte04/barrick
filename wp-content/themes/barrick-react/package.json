@@ -1,0 +1,53 @@
+{
+  "name": "Barrick",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "REACT_APP_REACT_SERVER=true REACT_APP_API_URL=http://localhost/barrick/ react-scripts start",
+    "build": "PUBLIC_URL=./wp-content/themes/barrick-react/dist/app/ NODE_ENV=development webpack -d && cp src/index.html dist/index.html && webpack-dev-server --port 3000 --content-base src/ --inline --hot",
+    "build:prod": "REACT_APP_API_URL=https://barrick.herokuapp.com/ PUBLIC_URL=https://barrick.herokuapp.com/wp-content/themes/barrick-react/dist/app/ NODE_ENV=production webpack -p && cp src/index.html dist/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "webpack -p"
+  },
+  "dependencies": {
+    "animated": "^0.2.1",
+    "compression-webpack-plugin": "^1.1.3",
+    "gsap": "^1.20.3",
+    "image-webpack-loader": "^3.2.0",
+    "node": "^9.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-lazy-blur": "^1.0.16",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-waypoint": "^7.3.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "underscore": "^1.8.3",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.28.7",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "file-loader": "^1.1.5",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.19.0",
+    "svg-inline-loader": "^0.8.0",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "carlosalmonte04/barrick",
+    "type": "project",
+    "authors": [
+        {
+            "name": "carlosalmonte04",
+            "email": "vacarlos_alm@hotmail.com"
+        }
+    ],
+    "require": {
+    }
+}
