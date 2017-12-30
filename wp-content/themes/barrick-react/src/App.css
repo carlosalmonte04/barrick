@@ -2192,8 +2192,8 @@ a {
   }
 
   .stat-item-subtitle > p:last-of-type {
-    font-size: calc(6.5px + 0.5vw) !important;
-    font-size: ~"calc(6.5px + 0.5vw) !important";
+    font-size: calc(7px + 0.5vw) !important;
+    font-size: ~"calc(7px + 0.5vw) !important";
   }
 
   .stats-header {
@@ -2699,6 +2699,7 @@ a {
 
  .learn-more-item.main > .learn-more-item-content-wrapper > .learn-more-item-title {
     font-size: calc(22px + 2vw);
+    font-size: ~"calc(22px + 2vw)";
   }
 
 
@@ -2746,7 +2747,8 @@ a {
   .learn-more-item-title {
     transform: translateY(-20px);
     margin-bottom: 0px;
-    font-size: calc(18px + 2vw);
+    font-size: calc(22px + 2vw);
+    font-size: ~"calc(22px + 2vw)";
   }
 
   .letter-item-boss-man.right::after {
@@ -2783,7 +2785,8 @@ a {
   }
   
   .stat-item-subtitle.two > div > *:first-of-type {
-    width: 15%;
+    width: 30%;
+    line-height: 1.76
   }
   
   .stat-item-subtitle > p:last-of-type {
@@ -2796,13 +2799,17 @@ a {
   }
 
   .stat-item-subtitle > p:last-of-type {
-    font-size: calc(8px + 1vw) !important;
-    font-size: ~"calc(9px + 1vw)";
+    font-size: calc(10px + 1vw) !important;
+    font-size: ~"calc(10px + 1vw)";
   }
 
   .stat-item-subtitle.two > p:last-of-type {
     width: 44%
   } 
+
+  .stat-item-subtitle.two {
+    width: 85%
+  }
 
   .stat-item:last-of-type > .stat-item-words-container > .stat-item-subtitle > p:last-of-type {
     font-size: calc(8px + 1vw) !important;
@@ -2833,7 +2840,7 @@ a {
   }
 
   .stat-item-subtitle.no-cash > p {
-    font-size: calc(9px + 1vw);
+    font-size: calc(10px + 1vw);
     font-size: ~"calc(9px + 1vw)"
   }
 
