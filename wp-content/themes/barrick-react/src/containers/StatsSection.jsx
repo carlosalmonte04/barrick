@@ -12,7 +12,8 @@ const StatsSection = (props) => {
           number="1.51"
           subtitle="Billion"
           cash
-          subtitleSmall="Generated in Free Cash Flow"
+          subtitleSmallTop="Generated in" 
+          subtitleSmallBottom="Free Cash Flow"
           chartHeader="Since last year, we more than tripled our free cash flow:"
           chart="one"
         />
@@ -22,14 +23,15 @@ const StatsSection = (props) => {
           number="2"
           subtitle="Billion"
           cash
-          subtitleSmall="Debt reduction target achieved"
+          subtitleSmallTop="Debt reduction"
+          subtitleSmallBottom="target achieved"
           chartHeader="Since the end of 2014, we have reduced our total debt by 40%:"
           chart="two"
         />
         <div className="stat-item-divider" />
         <StatItem
           title="Achieved Operational Exellence"
-          subtitleSmall="Implemented Best-in-Class operations and launched our digital reinvention with Cisco"
+          subtitleSmallTop="Implemented Best-in-Class operations and launched our digital reinvention with Cisco" 
           chartHeader="In 2016 we reduced our cost of sales and AISC to $798/oz and $730/oz, respectively:"
           chart="three"
         />

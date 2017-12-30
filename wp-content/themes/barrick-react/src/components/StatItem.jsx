@@ -12,12 +12,22 @@ const StatItem = (props) => {
         <div className="stat-item-line" />
           {props.cash
             ? <div className={`stat-item-subtitle ${props.chart}`}>
-                <span className="stat-item-subtitle-number">{props.number}</span>
-                <span>{props.subtitle}</span>
-                <span>{props.subtitleSmall}</span>
+                <div className="stat-item-subtitle-main">
+                  <span className="stat-item-subtitle-number">{props.number}</span>
+                  <span>{props.subtitle}</span>
+                </div>
+                <p>
+                  {props.subtitleSmallTop}
+                  <br />
+                  {props.subtitleSmallBottom}
+                </p>
               </div>
             : <div className="stat-item-subtitle no-cash">
-                <span>{props.subtitleSmall}</span>
+                <p>
+                  {props.subtitleSmallTop}
+                  <br />
+                  {props.subtitleSmallBottom}
+                </p>
               </div>
           }
       </div>
