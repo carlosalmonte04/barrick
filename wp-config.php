@@ -105,6 +105,8 @@ define( 'S3_UPLOADS_KEY', $_ENV["DBI_AWS_ACCESS_KEY_ID"] );
 define( 'S3_UPLOADS_SECRET', $_ENV["DBI_AWS_SECRET_ACCESS_KEY"] );
 define( 'S3_UPLOADS_REGION', 'us-east-2' ); // the s3 bucket region, required for Frankfurt, Beijing & Sydney.
 
+define('ACF_TO_REST_API_REQUEST_VERSION', 3);
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
