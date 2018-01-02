@@ -1486,7 +1486,7 @@ a {
   animation: move-arrow-left 0.3s ease-in-out;
   animation-fill-mode: forwards;
   margin-left: 10px;
-  min-width: 52px;
+  /*min-width: 63px;*/
 }
 
 .additional-info-item:hover > span > svg {
@@ -1505,13 +1505,29 @@ a {
   min-height: 663px;
 }
 
+.voting-items-header {
+  color: white;
+  font-size: 32px;
+  font-family: unset;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-family: 'Open Sans', 'OpenSans-Light', Times;
+}
+
+.voting-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px 50px 91px;
+}
+
 .voting-items-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 50px 0;
-  margin-top: 30px;
-  padding: 50px 30px 50px 91px;
+  margin-top: 80px;
+  /*padding: 50px 30px 50px 91px;*/
   width: 100%;
   max-width: 1600px;
   align-self: center;
@@ -1604,17 +1620,6 @@ a {
 .voting-item-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
-}
-
-.voting-items-header {
-  color: white;
-  font-size: 32px;
-  font-family: unset;
-  font-weight: 300;
-  padding-left: 91px;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-  font-family: 'Open Sans', 'OpenSans-Light', Times;
 }
 
 .voting-subtitle {
@@ -2118,12 +2123,8 @@ a {
     margin-top: 0
   }
 
-  .voting-items-container {
-    padding: 50px 50px;
-  }
-
-  .voting-items-header {
-    padding-left: 50px;
+  .voting-content-wrapper {
+    padding: 0px 50px;
   }
 }
 
@@ -2197,6 +2198,11 @@ a {
   .stat-item-subtitle > p:last-of-type {
     font-size: calc(7px + 0.5vw) !important;
     font-size: ~"calc(7px + 0.5vw) !important";
+    min-width: 70px
+  }
+
+  .stat-item-subtitle.two > p:last-of-type {
+    min-width: 73px;
   }
 
   .stats-header {
@@ -2217,6 +2223,11 @@ a {
   .stat-item-subtitle-main > *:first-of-type {
     font-size: 38px;
     line-height: 1.78;
+    /*width: 100%;*/
+  }
+  
+  .stat-item-subtitle.one > .stat-item-subtitle-main > .stat-item-subtitle-number {
+    width: 60%;
   }
 
   .stat-item {
@@ -2226,6 +2237,16 @@ a {
     width: 80%;
     min-height: 170px;
     margin: 10px auto !important;
+  }
+
+  .stat-item-subtitle.one {
+    width: 100%;
+    max-width: 237px;
+  }
+
+  .stat-item-subtitle.two {
+    width: 80%;
+    max-width: 189px
   }
 
   .stat-item-words-container {
@@ -2263,6 +2284,14 @@ a {
   .stat-item-divider {
     width: 88%;
     height: 1.8px;
+  }
+
+  .voting-item-title {
+    height: 60px;
+  }
+
+  .voting-item {
+    min-height: 300px;
   }
 
 }
@@ -2325,8 +2354,17 @@ a {
     width: 90% !important;
   }
 
+  .stats-items-container {
+    width: 100%;
+    align-self: center;
+  }
+
   .stat-item {
     width: 85%;
+  }
+
+  .stat-item-subtitle.no-cash > p:last-of-type {
+    width: 100%;
   }
 
   .stat-item-subtitle.one > .stat-item-subtitle-main span:nth-child(2) {
@@ -2496,8 +2534,6 @@ a {
 
   .voting-items-container {
     flex-direction: column;
-    margin-bottom: 0;
-    /*align-items: flex-start;*/
   }
 
   .voting-items-header {
@@ -2505,7 +2541,6 @@ a {
     font-size: calc(28px + 2vw);
     font-size: ~"calc(28px + 2vw)";
     line-height: 1.5;
-    padding-left: 0;
   }
 
   .voting-item {
@@ -2688,6 +2723,10 @@ a {
     transform: translateX(-100px);
   }
 
+  .letter-text.left {
+    transform: translateY(30px);
+  }
+
  .learn-more-item-play-learn-small {
     display: none;
     width: 70%;
@@ -2704,7 +2743,6 @@ a {
     font-size: calc(22px + 2vw);
     font-size: ~"calc(22px + 2vw)";
   }
-
 
   .button-primary.head  {
     animation: fade-out-down 0.3s linear, hide 0.5s 0.3s linear;
@@ -2775,8 +2813,9 @@ a {
     display: none;
   }
 
-  .stat-item-subtitle {
-    width: 100%
+  .stat-item-subtitle.one {
+    width: 100%;
+    max-width: 270px;
   }
 
   .stat-item-subtitle > * {
@@ -2807,11 +2846,13 @@ a {
   }
 
   .stat-item-subtitle.two > p:last-of-type {
-    width: 44%
+    width: 45%;
+    min-width: 102px;
   } 
 
   .stat-item-subtitle.two {
-    width: 85%
+    width: 87%;
+    max-width: 225px;
   }
 
   .stat-item:last-of-type > .stat-item-words-container > .stat-item-subtitle > p:last-of-type {
@@ -2855,7 +2896,7 @@ a {
     background-image: url('./assets/barrick-icon.png');
   }
 
-  .voting-items-container {
+  .voting-content-wrapper {
     padding: 50px 25px;
   }
 

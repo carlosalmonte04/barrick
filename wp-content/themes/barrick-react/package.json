@@ -4,7 +4,7 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "start": "REACT_APP_REACT_SERVER=true REACT_APP_API_URL=http://localhost/barrick/ react-scripts start",
+    "start": "REACT_APP_REACT_SERVER=true REACT_APP_API_URL=http://192.168.10.158/barrick/ react-scripts start",
     "build": "PUBLIC_URL=./wp-content/themes/barrick-react/dist/app/ NODE_ENV=development webpack -d && cp src/index.html dist/index.html && webpack-dev-server --port 3000 --content-base src/ --inline --hot",
     "build:prod": "REACT_APP_API_URL=https://barrick.herokuapp.com/ PUBLIC_URL=https://barrick.herokuapp.com/wp-content/themes/barrick-react/dist/app/ NODE_ENV=production webpack -p && cp src/index.html dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",

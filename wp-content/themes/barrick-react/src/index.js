@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import uiReducer from './reducers/uiReducer'
@@ -17,4 +17,4 @@ ReactDOM.render(<Router>
     </Provider>
   </Router>, 
   document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
