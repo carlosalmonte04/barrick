@@ -101,8 +101,10 @@ class App extends Component {
 
   render() {
     const isAppReady = !!this.state.DOMMounted
-    const { "/" : homeFields } = this.props.pagesAndFields
-    // const headerFields = homeFields)
+    const {
+      "/" : homeFields,
+      "header" : headerFields
+    } = this.props.pagesAndFields
     return (
       <div className={`App start ${isAppReady ? 'start' : ''}`}>
         <Header headerShrink={this.state.headerShrink} headerFields={headerFields} loading={!isAppReady} />
