@@ -1486,6 +1486,7 @@ a {
   animation: move-arrow-left 0.3s ease-in-out;
   animation-fill-mode: forwards;
   margin-left: 10px;
+  min-width: 52px;
 }
 
 .additional-info-item:hover > span > svg {

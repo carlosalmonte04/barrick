@@ -4,7 +4,7 @@ import setWPError from './setWPError'
 const PAGES_NAMES = {
   41 : "/",
   71 :"our-board",
-  191: "header"
+  861: "header"
 }
 
 export default function getPageContent() {

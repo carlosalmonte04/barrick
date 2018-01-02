@@ -29,7 +29,7 @@ class App extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!this.state.DOMMounted && nextProps.dataReady) {
+    if (!this.state.DOMMounted && nextProps.dataReady) { // if DOM mounted and data on state fade in welcome animation
       const heroDomImg = new Image()
       console.log("GOT", this.props.pagesAndFields)
       heroDomImg.src = nextProps.pagesAndFields["/"]["hero-background-image"]
@@ -50,7 +50,7 @@ class App extends Component {
     }
   }
 
-  animateLearnMoreItems = () => {
+  animateLearnMoreItems = () => { //TODO remove
     return null
     if (!this.state.learnMoreAnimated) {
       fadeInUp('learn-more-item', 1.5, 0.2)
@@ -58,7 +58,7 @@ class App extends Component {
     }
   }
 
-  animateLetters = () => {
+  animateLetters = () => { //TODO remove
     return null
     if (!this.state.lettersAnimated) {
       fadeIn('letter-item-boss-man', 1, 0.1)
@@ -101,10 +101,8 @@ class App extends Component {
 
   render() {
     const isAppReady = !!this.state.DOMMounted
-    const { // deconstruct and rename
-      "/" : homeFields,
-      "header" : headerFields
-    } = this.props.pagesAndFields
+    const { "/" : homeFields } = this.props.pagesAndFields
+    // const headerFields = homeFields)
     return (
       <div className={`App start ${isAppReady ? 'start' : ''}`}>
         <Header headerShrink={this.state.headerShrink} headerFields={headerFields} loading={!isAppReady} />
