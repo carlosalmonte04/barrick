@@ -2785,6 +2785,10 @@ a {
     padding-top: 20px;
   }
 
+  .letter-item-intro.left {
+    margin-right: 0px
+  }
+
   .learn-more-item-title {
     transform: translateY(-20px);
     margin-bottom: 0px;
@@ -2796,6 +2800,7 @@ a {
     transform: translateX(-18px);
     bottom: -2px;    
   }
+
 
   .stat-item {
     flex-direction: column;
