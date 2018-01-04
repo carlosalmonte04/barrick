@@ -13,10 +13,10 @@ export default class Header extends Component {
   render() {
     const { headerFields, loading, headerShrink } = this.props
     const {
-      "header-link-one": linkOne, 
-      "header-link-two": linkTwo,
-      "header-link-three": linkThree,
-      "header-link-four": linkFour
+      headerLinkOne, 
+      headerLinkTwo,
+      headerLinkThree,
+      headerLinkFour
     } = headerFields
     const headerClass = headerShrink ? 'shrink' : ''
 
@@ -26,9 +26,9 @@ export default class Header extends Component {
           <div className="header-left">
             <Logo className={`header-logo ${headerClass}`} loading={loading} shrink={headerShrink} />
             <ul className="header-links-container main">
-              <HeaderLink className={`header-link normal ${headerClass}`} link={linkOne} />
-              <HeaderLink className={`header-link normal ${headerClass}`} link={linkTwo} />
-              <HeaderLink className={`header-link normal ${headerClass}`} link={linkThree} />
+              <HeaderLink className={`header-link normal ${headerClass}`} link={headerLinkOne} />
+              <HeaderLink className={`header-link normal ${headerClass}`} link={headerLinkTwo} />
+              <HeaderLink className={`header-link normal ${headerClass}`} link={headerLinkThree} />
               <HeaderLink className={`header-link dropdown-trigger ${headerClass}`} text={"2018 Meeting"}>
                 <div className={`dropdown ${headerClass}`}>
                   <ul>

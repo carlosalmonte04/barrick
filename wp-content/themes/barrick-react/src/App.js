@@ -103,8 +103,20 @@ class App extends Component {
     const isAppReady = !!this.state.DOMMounted
     const {
       "/" : homeFields,
-      "header" : headerFields
     } = this.props.pagesAndFields
+    if (homeFields) {
+      const {
+        "header-link-one": headerLinkOne,
+        "header-link-two": headerLinkTwo,
+        "header-link-three": headerLinkThree,
+        "header-link-four": headerLinkFour
+      } = homeFields
+      var headerFields = { headerLinkOne, headerLinkTwo, headerLinkThree, headerLinkFour }
+    } else {
+      var headerFields = {}
+    }
+
+    console.log("I AM HADER", headerFields)
     return (
       <div className={`App start ${isAppReady ? 'start' : ''}`}>
         <Header headerShrink={this.state.headerShrink} headerFields={headerFields} loading={!isAppReady} />

@@ -107,6 +107,7 @@ define( 'S3_UPLOADS_REGION', 'us-east-2' ); // the s3 bucket region, required fo
 
 define('ACF_TO_REST_API_REQUEST_VERSION', 3);
 
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
